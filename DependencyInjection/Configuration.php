@@ -13,8 +13,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('accelerator_cache');
+        $treeBuilder = new TreeBuilder('accelerator_cache');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
